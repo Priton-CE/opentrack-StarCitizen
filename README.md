@@ -44,9 +44,10 @@ To setup a windows opentrack instance:
  3. Select `Install` next to "Setup file"
  4. Select `Install` again after adjusting settings if you like
  5. Make sure to have a [opentrack-win32-setup.exe](https://github.com/opentrack/opentrack/releases) ready to go and point to it in the path field
- 6. Make sure that the new "Game" you just added has the same runner, prefix, esync and fsync settings as Star Citizen
- 7. Open the windows opentrack instance and select `testtracker` as an input and `freetrack 2.0 Enhanced` as an output
- 8. Everytime before or after running Star Citizen you now have to open that windows opentrack instance and hit track to "reset" freetrack in your prefix so the game loads freetrack correctly
+ 6. Make sure that the new "Game" you just added in Lutris has the same runner, Wine prefix, esync and fsync settings as Star Citizen.
+ 7. Make sure that the new "Game" you just added in Lutris has the correct Executable path under Game options: pointing to the Opentrack exe file and NOT your Star Citizen exe file.
+ 9. Open the windows opentrack instance and select `testtracker` as an input and `freetrack 2.0 Enhanced` as an output
+ 10. Everytime before or after running Star Citizen you now have to open that windows opentrack instance and click 'Start' to "reset" freetrack in your prefix so the game loads freetrack correctly
 
 I should have fixed all other issues with Star Citizen and Opentrack I found using both myself.
 If you still have issues with Star Citizen not starting or using TrackIR correctly check the registry `Software/Freetrack/FreeTrackClient` for the key `Path` and make sure it's value is nothing or open an issue on GitHub.
