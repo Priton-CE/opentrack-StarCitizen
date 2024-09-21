@@ -1,3 +1,35 @@
+## Overview
+
+This Project is a fork of the official Opentrack Project, aimed at improving compatability with Star Citizen on Linux.
+
+### Branches
+
+- **wine-extended-proton** - Fixes compatability issues with UMU enabled Launchers (like Lutris)
+  - CHANGE: refactored protocol code to allow for the use of Proton outside of Steam
+  - CHANGE: redesigned the proto/wine UI to allow for specifying custom Proton Prefixes
+  - FIX: Fixed an issue where Proton Versions may appear multiple times
+  - FIX: FIxed an issue where some 3rd party Proton Versions were not getting detected
+
+## Building from Source
+
+To build this project follow the below list:
+
+1. run `git clone https://github.com/Priton-CE/opentrack-StarCitizen.git`
+2. change into the `opentrack-StarCitizen` directory
+3. run `git checkout wine-extended-proton` to utilize current modifications
+4. create a `build` directory
+5. change into the `build` directory
+6. run `cmake ..`
+7. run `ccmake ..` and enable `SDK_WINE`
+8. run `make`
+9. run `make install`
+
+There should now be a directory called `install` where you will find the Opentrack binary.
+
+---------------------------------------------------------
+
+# Opentrack README
+
 ## Intro
 
 [<img src="https://github.com/opentrack/opentrack/actions/workflows/cmake.yml/badge.svg">](https://github.com/opentrack/opentrack/actions/workflows/cmake.yml)
